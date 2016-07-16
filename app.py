@@ -2,7 +2,8 @@ from flask import Flask, render_template, redirect, request
 
 app = Flask(__name__)
 
-@app.route('/login', methods = ['POST'])
+#@app.route('/login', methods = ['POST'])
+@app.route('/dashboard')
 def login():
 	return render_template('dashboard.html')
 	
