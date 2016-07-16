@@ -1,244 +1,115 @@
 <!DOCTYPE HTML>
 <html>
-<head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <title>BeeTRI Portal</title>
+  </head>
+  <body>
+    <title>BeeTRI</title>
+    <!--[if lt IE 9]><script src=http://html5shiv.googlecode.com/svn/trunk/html5.js></script><![endif]-->
+    <!--[if lt IE 9]><link href=ie.css rel=stylesheet /><![endif]-->
 </head>
 <body>
-<style type="text/css">
-article header {
-	border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	width: 900px;
-	color: #eee;
-	height: 40px;
-	padding: 0 5px;
-	margin-bottom: 15px;
-	background-color: #0081ac;
-	box-shadow: inset 0 -35px 35px -18px #005b79;
-	background-image: -moz-linear-gradient(top, #0081ac, #005b79);
-	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #0081ac),color-stop(1, #005b79));
-}
-.form-style-9article{
-    max-width: 900px;
-    background: #FAFAFA;
-    padding: 10px;
-	margin: 0 0 30px 0;
-    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
-    border-radius: 10px;
-    border: 6px solid #305A72;
-}
-aside {
-	width: 300px;
-	float: left;
-	background: #FAFAFA;
-	margin-bottom: 30px;
-	margin-right: 20px;
-	padding: 10px;
-    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
-    border-radius: 10px;
-    border: 6px solid #305A72;
-}
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Sci-Solve</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12" style="margin-top: 5em;">
+        <img src="/static/images/logo2.PNG" alt="BeeTRI" width="600">
+      </div>
+    </div>
+    <div class="row">
 
-aside h1, footer h1 {
-	border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	width: 235px;
-	color: #eee;
-	height: 40px;
-	padding: 0 5px;
-	margin-bottom: 15px;
-	background-color: #0081ac;
-	box-shadow: inset 0 -35px 35px -18px #005b79;
-	background-image: -moz-linear-gradient(top, #0081ac, #005b79);
-	background-image: -
-}
+      <div class="col-md-8">
+        <div class="row">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Hive Monitoring</h3>
+            </div>
+            <div class="panel-body">
+              <iframe src="http://testy--sparky--sparky-shipped--00a8a8.gce.shipped-cisco.com/#/messages/Y2lzY29zcGFyazovL3VzL1JPT00vYjViM2ZiYTAtNDVmZS0xMWU2LWFkODAtZjEzODE5Zjc5ZDYy" style="width:100%; height: 33em;"></iframe>
+            </div>
+          </div> 
+        </div>
 
-aside nav, aside section {
-	margin: 0 0 25px 0;
-	padding: 0;
-	background: none;
-}
-aside section:last-child { margin-bottom: 0 }
+        <div class="row">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Global Hive Status</h3>
+            </div>
+            <div class="panel-body">
+              <iframe src="https://app.site1.ciscozeus.io/public/#/dashboard/BeeTRI?embed&_a=(filters:!(),panels:!((col:1,id:Events-Per-Day-by-Country,row:1,size_x:12,size_y:2,type:visualization),(col:1,id:Number-of-bees-per-site,row:4,size_x:12,size_y:2,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:'*')),title:BeeTRI)&_g=(time:(from:now-5y,mode:quick,to:now))" style="width:100%; height:32em;"></iframe>
+            </div>
+          </div> 
+        </div>
 
-section {
-  float: left;
-  margin: 0 100px;
-}
-/* HEADER */
-hgroup { margin: 20px 0 40px }
-hgroup h1 {
-	font: 40px/54px HighlandGothicLightFLFRegular, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	color: #970000;
-	text-shadow: -1px -1px 0 #650000, 0 0 10px rgba(255,255,255,0.7);
-}
-hgroup h1 a:hover { border: none }
-hgroup h2 {
-	font: 14px/20px Colaborate-RegularRegular, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	color: #eee;
-}
+      </div> <!-- Main Body -->
 
-/* Navigation */
-nav#global {
-	border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	width:725px;
-	margin: 0 100px;
-	color: #eee;
-	height: 40px;
-	padding: 0 100px;
-	margin-bottom: 15px;
-	background-color: #0081ac;
-	box-shadow: inset 0 -35px 35px -18px #005b79;
-	background-image: -moz-linear-gradient(top, #0081ac, #005b79);
-	background-image: -
-}
-nav#global ul {
-	text-align: center;
-	height: 40px;
-	margin: 0 auto;
-	display: table;
-}
-nav#global ul li { position: relative; display: inline }
-nav#global ul li a {
-	font-size: 14px;
-	display: block;
-	float: left;
-	text-transform: uppercase;
-	line-height: 40px;
-	padding: 0 25px;
-	color: #fff;
-}
-nav#global ul li a:hover {
-	border: none;
-	box-shadow: inset 0 0 15px #0081ac, inset 0 -35px 35px -18px #0081ac;
-	-moz-box-shadow: inset 0 0 15px #900;
-	background-image: -moz-linear-gradient(top, #0081ac, #005b79);
-	background-image: -ft top,color-stop(0, #ca0000),color-stop(1, #970000));
-}
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">References</h3>
+          </div>
+          <div class="panel-body">
+            <a href="http://beetri--beetri--jupyter-hackathon--38f832.gce.shipped-cisco.com/tree#">Data Analysis Platform</a>
+          </div>
+        </div>
 
-nav#global ul li #subMenu {
-	position: absolute;
-	top: 35px;
-	left: -387px;
-	-moz-transform: translate(0, 11px);
-	-webkit-transform: translate(232px, 0);
-	background: #970000;
-	height: 0;
-	z-index: -1;
-	border-radius: 15px;
-	-moz-border-radius: 15px;
-	-webkit-border-radius: 15px;
-	box-shadow: 0 0 10px #444, inset 0 0 15px #900, inset 0 35px 35px -18px #ca0000;
-	-moz-box-shadow: 0 0 10px #444, inset 0 0 15px #900;
-	-webkit-box-shadow: 0 0 10px #444;
-	background-image: -moz-linear-gradient(top, #ca0000, #970000);
-	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #ca0000),color-stop(1, #970000));
-}
-nav#global ul li #subMenu li {
-	display: block;
-	text-align: center;
-	margin: 0 auto;
-}
-nav#global ul li #subMenu li a {
-	height: 0;
-	line-height: 0;
-	width: 150px;
-}
-#subMenu li:first-child a {
-	border-top-left-radius: 15px;
-	-moz-border-radius-topleft: 15px;
-	-webkit-border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
-	-moz-border-radius-topright: 15px;
-	-webkit-border-top-right-radius: 15px;
-}
-#subMenu li:last-child a {
-	border-bottom-left-radius: 15px;
-	-moz-border-radius-bottomleft: 15px;
-	-webkit-border-bottom-left-radius: 15px;
-	border-bottom-right-radius: 15px;
-	-moz-border-radius-bottomright: 15px;
-	-webkit-border-bottom-right-radius: 15px;
-}
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">My Hive</h3>
+          </div>
+          <div class="panel-body">
+            <script id="6fa6bf03-519a-49dd-9428-5b92348ff676">var sId="6fa6bf03-519a-49dd-9428-5b92348ff676",iframe=document.createElement("iframe");iframe.width="250";iframe.height="900";iframe.src="//developer.relayr.io/dashboard/snippet/10c5b272-1979-4f13-97be-b27103daea74:3b383d97-8287-4a95-8bc6-c4cfeb5ddc6a!c0N6D8tLWXuB!,v1,5baa2875-cf0d-4981-b24b-96346175b53a!5ae0f19a-4b7d-492d-967f-e0b61bccc01c!Hackathon Hive";iframe.id="s-"+sId;iframe.frameBorder=0;document.body.appendChild(iframe);document.getElementById(""+sId).parentNode.appendChild(iframe);function aSize(a,b){document.getElementById("s-"+b).style.height=a+"px"};</script>
+          </div>
+        </div>
+      </div> <!-- Sidebar -->
 
-#services a {
-	transition: all 0.3s linear;
-	-o-transition: all 0.3s linear;
-	-moz-transition: all 0.3s linear;
-	-webkit-transition: all 0.3s linear;
-}
-#services:hover > #subMenu { z-index: 2 }
-#services:hover > #subMenu li a { height: 40px; line-height: 40px }
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Hives Around the World</h3>
+            </div>
+            <div class="panel-body">
+              <iframe src="http://beetri--beetri--merakicmxapi--8dfa17.gce.shipped-cisco.com/" style="width:100%;height:32em"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
 
+    </div> <!-- Top section -->
 
-/* MAIN */
-#content {
-	width: 630px;
-	margin-right: 30px;
-	float: left;
+  </div> <!-- Content -->
 
-img {
-    display: block;
-	float: left;
-    margin: auto;
-    width: 40%;
-}
-	
-<style>
-    select:option[default] {
-		color: #333;
-	}
-</style>
-
-<!DOCTYPE html>
-<html lang=en>
-<head>
-	<meta charset=UTF-8>
-	<title>BeeTRI</title>
-	<!--[if lt IE 9]><script src=http://html5shiv.googlecode.com/svn/trunk/html5.js></script><![endif]-->
-	<!--[if lt IE 9]><link href=ie.css rel=stylesheet /><![endif]-->
-</head>
-
-<body>
-<header>
-	<hgroup>
-
-		<img src="/static/images/logo2.PNG" alt="BeeTRI" width="600">
-	</hgroup>
-	<nav id=global>
-		<ul>
-			<li><a href=#>Home</a></li>
-			<li><a href=#>About</a></li>
-			<li><a href=#>Services</a></li>
-			<li><a href=#>Portfolio</a></li>
-			<li><a href=#>Contact</a></li>
-		</ul>
-	</nav>
-</header>
-<div id="WholePage">
-	<section>
-	<article class="form-style-9article">
-			<header>
-				<h1>Real Time Stream Data</h1>
-			</header>
-		<iframe src="https://app.site1.ciscozeus.io/public/#/dashboard/BeeTRI?embed&_a=(filters:!(),panels:!((col:1,id:Events-Per-Day-by-Country,row:1,size_x:12,size_y:3,type:visualization),(col:1,id:Number-of-bees-per-site,row:4,size_x:12,size_y:3,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:'*')),title:BeeTRI)&_g=(time:(from:now-5y,mode:quick,to:now))" height="650" width="900"></iframe>
-    </article>
-	<article class="form-style-9article">
-			<header>
-				<h1>Collaborate!</h1>
-			</header>
-		<iframe src="http://testy--sparky--sparky-shipped--00a8a8.gce.shipped-cisco.com/#/messages/Y2lzY29zcGFyazovL3VzL1JPT00vYjViM2ZiYTAtNDVmZS0xMWU2LWFkODAtZjEzODE5Zjc5ZDYy" width="900" height="500"></iframe>
-	</article>
-	<article class="form-style-9article">
-			<header>
-				<h1>Location Data</h1>
-			</header>
-		<iframe src="http://beetri--beetri--merakicmxapi--8dfa17.gce.shipped-cisco.com/" width="900" height="500"></iframe>
-	</article>
-	</section>
-
-
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
 </html>
