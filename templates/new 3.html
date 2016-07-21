@@ -1,0 +1,75 @@
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+ 
+ 
+<!-- CSS -->
+<style type="text/css">
+.drag {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 10px;
+    float: left;
+    margin-left: 5px;
+    text-align: center;
+    font-size: 12px;
+}
+ 
+#dragbasic {
+    width: 500px;
+    height: 150px;
+    border: 1px solid gray;
+    background-color: #E0F0FF;
+}
+ 
+#drag-x {
+    width: 500px;
+    height: 75px;
+    border: 1px solid gray;
+    background-color: #E0F0FF;
+}
+ 
+#drag-y {
+    width: 80px;
+    height: 300px;
+    border: 1px solid gray;
+    background-color: #E0F0FF;
+    float: left;
+}
+</style>
+ 
+ 
+<!-- Javascript -->
+<script>
+$(function () {
+        /* basic */
+        $("#dragbasic div[id^='drag']").draggable({
+                containment: "#dragbasic",
+                /*stack: ".drag"*/
+        });
+});
+</script>
+ 
+<!-- HTML -->
+<div>Y axis only</div>
+<div id="drag-y">        
+    <div id="drag4" class="drag" style="background-color:lightgreen">Drag me</div>
+        <div id="drag5" class="drag" style="background-color:lightyellow">Drag me</div>
+</div>    
+ 
+<div style="float:left;margin-left:30px;">
+    Basic
+    <div id="dragbasic">    
+        <div id="drag1" class="drag" style="background-color:orange">Drag me</div>
+        <div id="drag9" class="drag" style="background-color:orange">Drag me</div>    
+	</div>
+     
+    X axis only
+    <div id="drag-x">    
+        <div id="drag2" class="drag" style="background-color:orange">Drag me</div>
+        <div id="drag3" class="drag" style="background-color:lightblue">Drag me</div>    
+    </div>    
+</div>

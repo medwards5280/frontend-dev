@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Draggable - Default functionality</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <style>
+  #dragbasic {
+    width: 500px;
+    height: 150px;
+    border: 1px solid gray;
+    background-color: #E0F0FF;
+}
+.drag {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 10px;
+    float: left;
+    margin-left: 5px;
+    text-align: center;
+    font-size: 12px;
+}		
+  #draggable { width: 150px; height: 150px; padding: 0.5em; }
+  </style>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+ <script>
+$(function () {
+        /* basic */
+        $("#dragbasic div[id^='drag']").draggable({
+                containment: "#dragbasic",
+                /*stack: ".drag"*/
+        });
+		$("#dragbasic div[id^='drag']").resizable({
+        });
+});
+  </script>
+</head>
+<body>
+
+<div id="dragbasic">
+     <div id="drag1" class="drag" style="background-color:orange">Drag me</div>
+     <div id="drag9" class="drag" style="background-color:orange">Drag me</div>    
+
+</div>
+
+<div data-role="collapsible" data-iconpos="right">
+  <h3>I'm a header</h3>
+  <p>I'm the collapsible content. By default I'm closed, but you can click the header to open me.</p>
+</div>
+
+</body>
+</html>
